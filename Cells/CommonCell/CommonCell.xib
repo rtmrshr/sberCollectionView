@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CommonCell" id="GXd-wh-bna" customClass="CommonCell" customModule="sberCollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" insetsLayoutMarginsFromSafeArea="NO" id="BVf-vR-2MM">
+                <rect key="frame" x="0.0" y="0.0" width="155" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6FH-Te-vsZ">
+                        <rect key="frame" x="10" y="10" width="35" height="35"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="35" id="XB2-Zq-tS7"/>
+                            <constraint firstAttribute="height" constant="35" id="f8U-xG-oPf"/>
+                        </constraints>
+                    </imageView>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="reL-D5-mr8">
+                        <rect key="frame" x="125" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="CmS-Om-rdA"/>
+                            <constraint firstAttribute="width" constant="20" id="I9m-Gx-4lu"/>
+                        </constraints>
+                        <color key="tintColor" red="0.77647060160000003" green="0.77647060160000003" blue="0.78431367870000002" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="xmark" catalog="system"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dTe-H4-KC6">
+                        <rect key="frame" x="10" y="80" width="135" height="67"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="67" id="AAc-zP-eyN"/>
+                            <constraint firstAttribute="width" constant="135" id="thp-h1-usL"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" red="0.14901961389999999" green="0.2588235438" blue="0.27843138579999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                <constraints>
+                    <constraint firstItem="6FH-Te-vsZ" firstAttribute="top" secondItem="BVf-vR-2MM" secondAttribute="top" constant="10" id="0N3-k1-EjI"/>
+                    <constraint firstItem="reL-D5-mr8" firstAttribute="top" secondItem="BVf-vR-2MM" secondAttribute="top" constant="10" id="5VQ-Qd-6Y2"/>
+                    <constraint firstItem="6FH-Te-vsZ" firstAttribute="leading" secondItem="BVf-vR-2MM" secondAttribute="leading" constant="10" id="SuH-Ai-Izh"/>
+                    <constraint firstAttribute="trailing" secondItem="reL-D5-mr8" secondAttribute="trailing" constant="10" id="UnN-4h-BNE"/>
+                    <constraint firstItem="dTe-H4-KC6" firstAttribute="top" secondItem="6FH-Te-vsZ" secondAttribute="bottom" constant="35" id="Zcd-N3-AXH"/>
+                    <constraint firstItem="dTe-H4-KC6" firstAttribute="leading" secondItem="BVf-vR-2MM" secondAttribute="leading" constant="10" id="aab-9L-tBc"/>
+                    <constraint firstAttribute="bottom" secondItem="dTe-H4-KC6" secondAttribute="bottom" constant="10" id="hhQ-Pz-tJo"/>
+                    <constraint firstAttribute="trailing" secondItem="dTe-H4-KC6" secondAttribute="trailing" constant="10" id="s3E-AU-4g8"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="257" height="260"/>
+            <connections>
+                <outlet property="closeButton" destination="reL-D5-mr8" id="Vzn-Qo-gdH"/>
+                <outlet property="iconImageView" destination="6FH-Te-vsZ" id="zej-W6-y8P"/>
+                <outlet property="textLabel" destination="dTe-H4-KC6" id="Qh6-fv-uu5"/>
+            </connections>
+            <point key="canvasLocation" x="162.59541984732823" y="51.056338028169016"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="xmark" catalog="system" width="128" height="113"/>
+    </resources>
+</document>

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ButtonCell" id="H3P-53-WDT" customClass="ButtonCell" customModule="sberCollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="90" height="155"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="tUb-D5-5dG">
+                <rect key="frame" x="0.0" y="0.0" width="90" height="155"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="heh-R7-sI5">
+                        <rect key="frame" x="0.0" y="0.0" width="90" height="155"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XUF-Jq-Nht">
+                                <rect key="frame" x="0.0" y="0.0" width="90" height="70"/>
+                                <color key="backgroundColor" red="0.2120373495909065" green="0.86078912019729614" blue="0.74806966497682892" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="90" id="AWy-Yf-htM"/>
+                                    <constraint firstAttribute="height" constant="70" id="NX0-e9-U4B"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pws-Ha-ZxC">
+                                <rect key="frame" x="0.0" y="85" width="90" height="70"/>
+                                <color key="backgroundColor" red="0.2120373495909065" green="0.86078912019729614" blue="0.74806966497682892" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="70" id="CTG-al-RaE"/>
+                                    <constraint firstAttribute="width" constant="90" id="zNz-So-SRe"/>
+                                </constraints>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain"/>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="heh-R7-sI5" secondAttribute="bottom" id="1nD-xb-W9h"/>
+                    <constraint firstItem="heh-R7-sI5" firstAttribute="leading" secondItem="tUb-D5-5dG" secondAttribute="leading" id="Kn2-mT-7gB"/>
+                    <constraint firstItem="heh-R7-sI5" firstAttribute="top" secondItem="tUb-D5-5dG" secondAttribute="top" id="WV2-0q-0eA"/>
+                    <constraint firstAttribute="trailing" secondItem="heh-R7-sI5" secondAttribute="trailing" id="oJM-t9-YgI"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <connections>
+                <outlet property="bottomButton" destination="pws-Ha-ZxC" id="rN6-U1-u4D"/>
+                <outlet property="topButton" destination="XUF-Jq-Nht" id="duC-WB-egx"/>
+            </connections>
+            <point key="canvasLocation" x="302" y="62"/>
+        </collectionViewCell>
+    </objects>
+</document>
